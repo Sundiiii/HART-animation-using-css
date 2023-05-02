@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    z-index:2;
+position: relative;
+left: 126PX;
+top:-10PX;
+animation: bit 0.3s ease infinite alternate ;
+}
+ .l{
+     height: 100vh;
+     background-color: aqua;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+ }
+.l1{
+    align-content: center;
+    color: blueviolet;
+    background:red;
+     width:20vw;
+     height:20vh;
+    position:relative;
+    rotate:-45deg;
+    animation: bit 0.3s ease infinite alternate ;
+    /* transition: all 2s linear ease infinite; */
+}
+@keyframes bit {
+    to{
+        transform:scale(1.5);
+    }
+}
+
+.l1::after{ 
+    background:red;
+    border-radius:50%;
+    content:'';
+    position:absolute;
+    top: -50px;;
+    left: -0px;;
+    width:20vw;
+    height:20vh;
+    box-shadow: -10px 10px 90px red;
+} 
+.l1::before{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    top: 0px;;
+    left: 50px;;
+    background:red;
+    width:20vw;
+    height:20vh;
+    box-shadow: -10px 10px 90px red;
+}
+/* @keyframes loading {
+    to{
+        opacity: 1;
+       transform:scale(1.5) ; 
+    }
+}  */
+
+
+
